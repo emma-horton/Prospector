@@ -1,0 +1,126 @@
+
+/* Font */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Login page */
+
+#main-container {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#login_page {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+#login-container {
+    text-align: center;
+}
+
+
+/* User information */
+
+#user-infomation {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+#logoff-button {
+    display: none;
+}
+
+
+/* Game settings */
+
+#game-settings {
+    display: none;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#game-settings label {
+    display: block; 
+    text-align: center; 
+}
+
+#game-settings select {
+    width: 200px; 
+    margin-bottom: 5px; 
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+
+
+/* Gameboard */
+
+#game-status-information {
+    padding: 15px;
+    text-align: center;
+}
+
+#gameboard {
+    display: none;
+    border: 3px solid black;
+}
+
+#gb-container {
+    display: grid; 
+    padding: 15px;
+    justify-content: center;
+}
+
+#scores-container {
+    text-align: center;
+}
+
+#game-buttons {
+    text-align: center;
+    padding: 15px;
+}
+
+.edge1 {
+    background-color: burlywood;
+    border: 1px solid black;
+}
+
+.box1 {
+    background-color: green;
+}
+
+.empty1 {
+    background-color: burlywood;
+    border: 1px solid black;
+}
+
+.fence1 {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.claimed-land {
+    background-color: yellow;
+    border: 1px solid black;
+}
+.copper {
+    background-color: brown;
+    border: 1px solid black;
+}
+.silver {
+    background-color: grey;
+    border: 1px solid black;
+}
+.gold {
+    background-color: goldenrod;
+    border: 1px solid black;
+}

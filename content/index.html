@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospector!</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+
+    <!-- Header Information -->
+
+    <div id="header_info">
+        <h1>Prospector!</h1>
+        <h2>Produced by 23007902 and 230017667 for CS5003 assignment 2</h2>
+        <hr>
+    </div>
+
+    <div id="main-container">
+
+        <!-- Login page -->
+
+        <div id="login_page">
+            <div id="login-container">
+                <h4>Welcome to Prospector!</h4>
+                <h4>Please login, or register if you are a new user, below.</h4>
+                <input id="username-field" type="text" placeholder="Username"><br>
+                <input id="password-field" type="password" placeholder="Password"><br>
+                <br>
+                <button onclick="userLogin()">Log in</button>
+                <button onclick="registerUser()">Register</button><br>
+            </div>
+        </div>
+
+        <!-- Score board, username and logout button -->
+
+        <div id="user-information-container">
+            <div id="user-infomation">
+                <p id="score-board"></p>
+                <button onclick="reloadPage()" id="logoff-button">Log out</button>
+            </div>
+        </div>
+
+        <!-- Game settings -->
+
+        <div id="game-settings">
+
+            <h4>Game settings:</h4>
+
+            <label for="no_players">Number of players:</label>
+            <select name="no_players" id="no_players">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <br>
+
+            <label for="land_types">Land types:</label>
+            <select name="land_types" id="land_types">
+                <option value="standard">Standard</option>
+                <option value="standard1">Standard + Bonus</option>
+                <option value="standard2">Standard + Bonus + Special</option>
+                <option value="standard3">Standard + Bonus + Special + Unique</option>
+            </select>
+
+            <br>
+
+            <label for="grid_shape">Grid shape:</label>
+            <select name="grid_shape" id="grid_shape">
+                <option value="rectangular">Rectangular</option>
+                <option value="triangular">Triangular</option>
+                <option value="hexagonal">Hexagonal</option>
+                <option value="random">Randomly Placed</option>
+            </select>
+
+            <br>
+
+            <label for="grid_height">Grid height:</label>
+            <select name="grid_height" id="grid_height">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+
+            <label for="grid_length">Grid length:</label>
+            <select name="grid_length" id="grid_length">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+
+            <button onclick="startNewGame()" id="gameboard-update">Start New Game</button>
+
+            <!-- Other ongoing games on the server -->
+            <h4>Ongoing Games</h4>
+            <div id="ongoing-games"></div>
+            <br>
+            <h4>Finished Games</h4>
+            <div id="finished-games"></div>
+
+
+        </div>
+
+        <br>
+
+        <!-- Game Board -->
+
+        <div id="gameboard">
+
+            <div id="game-status-information">
+                <p>Game status: <span id="game-status"></span></p>
+                <p>Scores:</p>
+            </div>
+
+            <div id="scores-container">
+            </div>
+
+            <div id="gb-container">
+            </div>
+            <br>
+            <div id="game-buttons">
+                <button id="home-button" onclick="gameboard2Gamesetting()" >Home</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
