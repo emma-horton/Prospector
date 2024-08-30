@@ -1,7 +1,7 @@
 // set up initial config settings for the server
 const express = require('express');
 const app = express();
-const API_PORT = 24474;
+const API_PORT = process.env.PORT || 24474;
 
 app.use(express.urlencoded({ extended: true })) // optional but useful for url encoded data
 app.use(express.json())
