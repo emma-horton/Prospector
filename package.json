@@ -2,10 +2,11 @@
   "name": "prospector!",
   "version": "1.0.0",
   "description": "Multiplayer game where users take turns to build fences to claim land",
-  "main": "main.js", 
+  "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
   "dependencies": {
     "express": "^4.18.3"
+  }
 }
