@@ -5,7 +5,7 @@
 
 
 Follow this link to play: 
-https://prospector-website-14ff01a176b0.herokuapp.com
+[https://prospector-website-14ff01a176b0.herokuapp.com](https://prospector-new-6f0ac810a7c3.herokuapp.com)
 
 Instructions to run the server:
 Open the terminal and run 'npm install express' followed by 'node main.js'
